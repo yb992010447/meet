@@ -135,9 +135,9 @@ export class AbstractWelcomePage extends Component<Props, *> {
      */
     _animateRoomnameChanging(word: string) {
         let animateTimeoutId;
-        const roomPlaceholder = this.state.roomPlaceholder + word.substr(0, 1);
+        const roomPlaceholder = this.state.roomPlaceholder + ' 输入房间名称';
 
-        if (word.length > 1) {
+        /*if (word.length > 1) {
             animateTimeoutId
                 = setTimeout(
                     () => {
@@ -145,7 +145,7 @@ export class AbstractWelcomePage extends Component<Props, *> {
                             word.substring(1, word.length));
                     },
                     70);
-        }
+        }*/
         this.setState({
             animateTimeoutId,
             roomPlaceholder

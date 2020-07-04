@@ -34,8 +34,8 @@ type Props = AbstractButtonProps & {
 class VideoBlurButton extends AbstractButton<Props, *> {
     accessibilityLabel = 'toolbar.accessibilityLabel.videoblur';
     icon = IconBlurBackground;
-    label = 'toolbar.startvideoblur';
-    tooltip = 'toolbar.startvideoblur';
+    label = '背景模糊';
+    tooltip = '背景模糊';
     toggledLabel = 'toolbar.stopvideoblur';
 
     /**
